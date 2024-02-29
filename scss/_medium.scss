@@ -1,0 +1,20 @@
+header {
+    padding: 2rem $gutter;
+    h1 {font-size: 2rem;}
+} // end header styles
+
+//main stuff
+section {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    ul {
+        display:flex;
+    }// end ul
+    ul li a {
+        border: none;
+    }
+
+} // end nav

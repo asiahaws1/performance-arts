@@ -1,0 +1,205 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+}
+
+#headerWrapper {
+    background-color: #c42c9e;
+    color: $secondaryColor;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem $gutter;
+    gap: 8px;
+    justify-content: space-between;
+
+    h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem $gutter;
+    gap: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: $normalWeight;
+    color: #FFF;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+// header
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: block; 
+    background-color: #909fcd;
+    width:100vw;
+}
+
+nav li.active {
+    background-color: #9D6381;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #d3d1d7;
+}
+
+
+/* MAIN  */
+main {
+    p {
+        padding: .5rem 2vw;
+        color: #333;
+        line-height: 125%;
+    }
+
+    h1 {
+        padding: 1rem 2vw .5rem 2vw;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+// end main
+
+
+
+/* FOOTER  */
+#footerWrapper {
+    background-color: #1b1b1b;
+}
+
+footer {
+    font-size: .85rem;
+    padding: 1rem 0;
+    color: #bbb;
+    text-align: center;
+
+    a {
+        color: #eee;
+    }
+}
+
+
+
+
+
+//style the cards
+#mainWrapper {
+    padding-bottom: 40px;
+
+}
+
+main h1 {
+    font-weight: bold;
+    color: #000000;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section div {
+    width: 100%;
+    padding: 1rem $gutter; 
+    margin-bottom: 1rem; 
+    box-sizing: border-box; 
+}
+
+section div img {
+    display: block; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section div h2 {
+    margin-top: 0; 
+    padding: 10px;
+    background-color: #909fcd;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+
+// begin the footer
+#footerWrapper {
+    background: #CECCCC;
+}
+
+footer {
+    padding: 0.5rem $gutter;
+    color: #000000;
+
+    p {
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+    }
+}
